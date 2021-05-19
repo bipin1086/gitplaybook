@@ -7,9 +7,9 @@ resources:
       branch: main
 
 jobs:
-  - name: job-hello-world
+  - name: job-list-files
     public: true
     plan:
       - get: test-repository
-      - task: hello-world
-        file: test-pipeline/tasks/hello-world.yml
+      - task: list-files
+        file: gitpipeline/tasks/list-files.yml
