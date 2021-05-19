@@ -3,7 +3,7 @@ resources:
   - name: test-repository
     type: git
     source:
-      uri: https://github.com/bipin1086/test_pipeline.git
+      uri: https://github.com/bipin1086/gitpipeline.git
       branch: main
 
 jobs:
