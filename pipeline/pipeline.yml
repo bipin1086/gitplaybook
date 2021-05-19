@@ -3,7 +3,7 @@ resources:
   - name: test-repository
     type: git
     source:
-      uri: https://github.com/bipin1086/gitpipeline.git
+      uri: https://github.com/bipin1086/gitplaybook.git
       branch: main
 
 jobs:
@@ -12,4 +12,4 @@ jobs:
     plan:
       - get: test-repository
       - task: list-files
-        file: gitpipeline/tasks/list-files.yml
+        file: gitplaybook/tasks/list-files.yml
