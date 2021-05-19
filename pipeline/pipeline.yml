@@ -1,0 +1,15 @@
+---
+resources:
+  - name: test-repository
+    type: git
+    source:
+      uri: https://github.com/bipin1086/test_pipeline.git
+      branch: main
+
+jobs:
+  - name: job-hello-world
+    public: true
+    plan:
+      - get: test-repository
+      - task: hello-world
+        file: test-pipeline/tasks/hello-world.yml
